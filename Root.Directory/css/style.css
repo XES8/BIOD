@@ -11,10 +11,10 @@
     top: 50%; /* 距离父元素顶部50% */
     left: 50%; /* 距离父元素左侧50% */
     transform: translate(-50%, -50%); /* 将元素中心点移动到视口中心 */
-    background-color: rgba(255, 255, 255, 0.9); /* 设置背景颜色为白色，透明度为90% */
+    background-color: rgba(255, 255, 255, 1); /* 设置背景颜色为白色，透明度为100% */
     padding: 20px; /* 设置内边距为20px */
     border-radius: 5px; /* 设置圆角边框半径为5px */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* 设置阴影效果，颜色为黑色透明度10% */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* 设置阴影效果，颜色为黑色透明度90% */
     text-align: center; /* 文本居中对齐 */
 }
 
