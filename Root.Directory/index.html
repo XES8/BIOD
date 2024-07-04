@@ -5,33 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>stars</title>
-<styl>
-
- <link rel="stylesheet" href="css/style.css"><!--居中显示-->
-    <link rel="stylesheet" href="css/background.css"> 
+    <title>Stars Animation</title>
     
-              </styl>
+    <!-- 导入外部样式表 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/background.css">
 
+    <!-- 内嵌样式不应该包含在 <style> 标签内部 -->
+    <style>
+        /* 在这里可以添加页面的其他样式 */
+    </style>
 </head>
+
 <body>
     <div class="index-bg">
         <div class="stars">
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
+            <!-- 这里不需要静态的 .star 元素 -->
         </div>
     </div>
 
-</body>
-    
-    <body>
-        
-   <div class="login-container">
+    <div class="login-container">
         <h2>用户登录</h2>
         <form action="login.php" method="POST">
             <div class="input-group">
@@ -45,6 +38,9 @@
             <button type="submit">登录</button>
         </form>
     </div>
-    </body>
+
+    <!-- 导入外部 JavaScript 文件 -->
+    <script src="javascript/quantity.js"></script>
+</body>
 
 </html>
