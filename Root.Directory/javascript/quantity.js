@@ -1,7 +1,7 @@
 // JavaScript 代码
 document.addEventListener('DOMContentLoaded', function () {
     // DOM 加载后执行
-    generateStars(22); // 生成10个星星，根据需要调整数量
+    generateStars(50); // 生成10个星星，根据需要调整数量
 
     function generateStars(numStars) {
         var starsContainer = document.querySelector('.stars');
