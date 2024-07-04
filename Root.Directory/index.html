@@ -7,19 +7,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>stars</title>
 
-     <link rel="stylesheet" href="css/style.css">
+    <!-- 导入外部样式表 -->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/background.css">
-    <style>
-
-    </style>
 </head>
 
 <body>
     <div class="index-bg">
         <div class="stars">
-          
+            <!-- 星星会在这里生成 -->
         </div>
     </div>
+    <div id="blog-content"></div> <!-- 用于加载外部 HTML 文件的占位符 -->
+
+    <!-- 导入外部 JavaScript 文件 -->
+    <script src="javascript/quantity.js"></script>
+
+    <!-- 用于加载外部 HTML 文件的脚本 -->
+    <script>
+        fetch('HTML/blog-single.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('blog-content').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading HTML:', error));
+    </script>
 </body>
 
 </html>
